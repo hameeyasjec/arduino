@@ -1,0 +1,33 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  //Red
+  digitalWrite(12,	HIGH);
+  digitalWrite(11,	LOW);
+  digitalWrite(10,	LOW);
+  delay(1000);
+  
+  //green
+  digitalWrite(12,	LOW);
+  digitalWrite(11,	HIGH);
+  digitalWrite(10,	LOW);
+  delay(1000);
+  
+  
+  //blue
+  digitalWrite(12,	LOW);
+  digitalWrite(11,	LOW);
+  digitalWrite(10,	HIGH);
+  delay(1000);
+  
+  //digitalWrite(LED_BUILTIN, HIGH);
+  //delay(1000); // Wait for 1000 millisecond(s)
+  //digitalWrite(LED_BUILTIN, LOW);
+  //delay(1000); // Wait for 1000 millisecond(s)
+}
